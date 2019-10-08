@@ -9,6 +9,7 @@ using YB_Create_Web_Api.Models;
 
 namespace YB_Create_Web_Api.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class TodoController : ControllerBase
@@ -80,6 +81,10 @@ namespace YB_Create_Web_Api.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Deletes a specific TodoItem.
+        /// </summary>
+        /// <param name="id">Identificador</param>    
         // DELETE: api/Todo/1
         [HttpDelete("{id}")]
         public async Task<ActionResult<Item>> DeleteTodoItem(long id)
@@ -94,6 +99,36 @@ namespace YB_Create_Web_Api.Controllers
             await _context.SaveChangesAsync();
 
             return todoItem;
+        }
+
+
+        /// <summary>
+        /// Creates an Item.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /Todo
+        ///     {
+        ///        "id": 1,
+        ///        "name": "Item1",
+        ///        "isComplete": true
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="item"></param>
+        /// <returns>A newly created TodoItem</returns>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>            
+        [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+        public ActionResult<Item> Create(Item item)
+        {
+            _context.Items.Add(item);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
         }
 
         private bool ItemExists(long id)
