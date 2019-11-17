@@ -11,6 +11,7 @@ namespace YB_Create_Web_Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
+    [FormatFilter]
     [ApiController]
     public class TodoController : ControllerBase
     {
@@ -39,6 +40,8 @@ namespace YB_Create_Web_Api.Controllers
         }
 
         // GET: api/Todo/1
+        //https://docs.microsoft.com/es-es/aspnet/core/web-api/advanced/formatting?view=aspnetcore-2.2#response-format-url-mappings
+        //[HttpGet("{id}.{format?}")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Item>> TodoItem(long id)
         {

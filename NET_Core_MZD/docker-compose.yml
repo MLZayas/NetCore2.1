@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ob-docker_vstools:
+    image: ${DOCKER_REGISTRY-}obdockervstools
+    build:
+      context: .
+      dockerfile: OB-Docker_VSTools\Dockerfile

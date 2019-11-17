@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WB_My_First_NetCore_App", "WB_My_First_NetCore_App\WB_My_First_NetCore_App.csproj", "{A64A374E-5E7C-4241-89D1-35A37F9B2735}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WB_My_First_NetCore_App", "WB_My_First_NetCore_App\WB_My_First_NetCore_App.csproj", "{A64A374E-5E7C-4241-89D1-35A37F9B2735}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WB_StringLibrary", "WB_ClassLibraryProject\WB_StringLibrary.csproj", "{4CDFA647-2E70-4F2A-A79F-22688E262038}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WB_StringLibrary", "WB_ClassLibraryProject\WB_StringLibrary.csproj", "{4CDFA647-2E70-4F2A-A79F-22688E262038}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WB_StringLibraryTest", "StringLibraryTest\WB_StringLibraryTest.csproj", "{8BB487F6-97B3-4926-8C94-3FBF0FFE8D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WB_StringLibraryTest", "StringLibraryTest\WB_StringLibraryTest.csproj", "{8BB487F6-97B3-4926-8C94-3FBF0FFE8D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YB_Create_Web_Api", "YB_Create_Web_Api\YB_Create_Web_Api.csproj", "{E24CA7D8-26F3-4911-AB53-F68B8E60CC4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YB_Create_Web_Api", "YB_Create_Web_Api\YB_Create_Web_Api.csproj", "{E24CA7D8-26F3-4911-AB53-F68B8E60CC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OB-Docker_VSTools", "OB-Docker_VSTools\OB-Docker_VSTools.csproj", "{2F63BE7F-893D-4DB0-AB62-93D8E16D2FE1}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4354DEAE-1BCD-4192-BA7E-67885A658393}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{E24CA7D8-26F3-4911-AB53-F68B8E60CC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E24CA7D8-26F3-4911-AB53-F68B8E60CC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E24CA7D8-26F3-4911-AB53-F68B8E60CC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F63BE7F-893D-4DB0-AB62-93D8E16D2FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F63BE7F-893D-4DB0-AB62-93D8E16D2FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F63BE7F-893D-4DB0-AB62-93D8E16D2FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F63BE7F-893D-4DB0-AB62-93D8E16D2FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4354DEAE-1BCD-4192-BA7E-67885A658393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4354DEAE-1BCD-4192-BA7E-67885A658393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4354DEAE-1BCD-4192-BA7E-67885A658393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4354DEAE-1BCD-4192-BA7E-67885A658393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,6 +26,7 @@ namespace YB_Create_Web_Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddDbContext<ApplicationDbContext>(opt =>
                 opt.UseInMemoryDatabase("TodoList"));
             services.AddMvc()
@@ -57,6 +58,16 @@ namespace YB_Create_Web_Api
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+            services.AddMvc(options =>
+            {
+                //requires using Microsoft.AspNetCore.Mvc.Formatters;
+                //To delete the formatters StringOutputFormatter y HttpNocontentOutputFormatter
+                //options.OutputFormatters.RemoveType<StringOutputFormatter>();
+                //options.OutputFormatters.RemoveType<HttpNoContentOutputFormatter>();
+                options.RespectBrowserAcceptHeader = true; // false by default
+            });
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddXmlSerializerFormatters();
         }
 
         public void Configure(IApplicationBuilder app)
