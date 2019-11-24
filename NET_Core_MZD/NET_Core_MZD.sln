@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp1", "WebApp1\WebApp1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JC_WindowsAutentication", "JC_WindowsAutentication\JC_WindowsAutentication.csproj", "{F8A5882A-4D2B-4BA5-BDD3-4EC05E12F08D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JC_ExternalProvidersAutentication", "JC_ExternalProvidersAutentication\JC_ExternalProvidersAutentication.csproj", "{20130C18-F556-4F71-A329-12F4469C15EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F8A5882A-4D2B-4BA5-BDD3-4EC05E12F08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8A5882A-4D2B-4BA5-BDD3-4EC05E12F08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8A5882A-4D2B-4BA5-BDD3-4EC05E12F08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20130C18-F556-4F71-A329-12F4469C15EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20130C18-F556-4F71-A329-12F4469C15EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20130C18-F556-4F71-A329-12F4469C15EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20130C18-F556-4F71-A329-12F4469C15EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
